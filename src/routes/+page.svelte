@@ -1,6 +1,9 @@
 <script>
     import { onMount } from "svelte";
+    import { Link } from "svelte-routing";
 
+    const providers = ["x", "github", "aad"];
+    const redirect = window.location.pathname;
     let userInfo = undefined;
 
     onMount(async () => (userInfo = await getUserInfo()));
