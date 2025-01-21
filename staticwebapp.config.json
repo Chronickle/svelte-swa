@@ -3,17 +3,10 @@
         {
             "route": "/*",
             "allowedRoles": [
-                "anonymous",
                 "authenticated"
             ]
         }
     ],
-    "navigationFallback": {
-        "rewrite": "/index.html",
-        "exclude": [
-            "*.{css,scss,js,png,gif,ico,jpg,svg}"
-        ]
-    },
     "globalHeaders": {
         "X-Content-Type-Options": "nosniff"
     },
