@@ -25,10 +25,10 @@
 
 <div>
     {#if !userInfo}
-        <a href="/login">Login</a>
+        <a href={`/.auth/login/aad`}>Login</a>
     {/if}
     {#if userInfo}
-        <a href="/logout"> Logout </a>
+        <a href={`/.auth/logout`}> Logout </a>
     {/if}
 </div>
 
